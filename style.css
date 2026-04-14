@@ -201,7 +201,7 @@ a:hover {
     border: 1px solid #d0d7de;
     border-radius: 12px;
     padding: 20px;
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
     display: flex;
     flex-direction: column;
@@ -218,6 +218,10 @@ a:hover {
     border-color: #0969da;
     box-shadow: 0 6px 0 #0969da;
     top: -2px;
+}
+
+.project-card:hover h3 {
+    text-decoration: underline;
 }
 
 /* Click: "Push" the button down */
@@ -237,6 +241,8 @@ a:hover {
     line-height: 1.4;
     color: #57606a;
     margin-bottom: 15px;
+    text-decoration: none;
+    display: block;
 }
 
 .project-tag {
@@ -246,6 +252,8 @@ a:hover {
     border-radius: 10px;
     border: 1px solid #d0d7de;
     margin-right: 5px;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* --- MOBILE RESPONSIVENESS --- */
