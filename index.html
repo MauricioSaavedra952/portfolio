@@ -7,24 +7,54 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <nav>
+        <div class="nav-container">
+            <strong>Portfolio.</strong>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="404.html">About</a>
+            </div>
+        </div>
+    </nav>
+    
     <div id="content-wrapper">
-        <h1>Mauricio Saavedra</h1>
-        <a href="resume.pdf" class="btn">View My CV</a>
+        <div class="site-grid">
+            <aside>
+                <div style="background: #eee; width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px;">
+                    </div>
+                <h3>Contact</h3>
+                <p>📧 <a href="mailto:your@email.com">Email Me</a></p>
+                <a href="resume.pdf" class="btn" style="display: block; text-align: center;">View My CV</a>
+                <br>
+                <h3>Skills</h3>
+                <p>Python, HTML, CSS, Data Analysis</p>
+            </aside>
+
+            <main>
+                <h1>Mauricio Saavedra</h1>
+                <p style="font-size: 1.1rem; color: #57606a;">Research Assistant at Carnegie Mellon University</p>
     
-        <div class="header-row">
-            <h3><strong>Carnegie Mellon University</strong> — Research Assistant</h3>
-            <span class="date">2022 - Present</span>
+                <h2 id="experience">Experience</h2>
+                <div class="header-row">
+                    <h3><strong>Carnegie Mellon University</strong> — Research Assistant</h3>
+                    <span class="date">2022 - Present</span>
+                </div>
+    
+                <h2 id="publications">Publications</h2>
+                <div class="publication">
+                    <strong>"Enabling Skilled Human-Computer Interaction After Paralysis via a Wearable sEMG Interface"</strong><br>
+                    <em>Journal or Conference Name</em>, 2024<br>
+                    <a href="#">Link to Publication</a>
+                </div>
+    
+                <h2 id="projects">Projects</h2>
+                <p>Coming soon...</p>
+            </main>
+    
         </div>
-    
-        <h2>Publications</h2>
-        <div class="publication">
-            <strong>"Enabling Skilled Human-Computer Interaction After Paralysis via a Wearable sEMG Interface"</strong><br>
-            <em>Journal or Conference Name</em>, 2024<br>
-            <a href="#">Link to Publication</a>
-        </div>
-    
-        <h2>Projects</h2>
-        <p>Coming soon...</p>
     </div>
 </body>
 </html>
