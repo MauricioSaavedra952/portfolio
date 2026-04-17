@@ -206,7 +206,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 150px;
+    min-height: 100px;
     
     /* 3D "Raised" Effect */
     box-shadow: 0 4px 0 #d0d7de; 
