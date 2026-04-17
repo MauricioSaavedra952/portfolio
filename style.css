@@ -15,8 +15,12 @@ body {
     align-items: center;
 }
 
-section[id] {
+/* section[id] {
     scroll-margin-top: 80px; 
+} */
+
+#projects, #experience, #about {
+    scroll-margin-top: 100px !important;
 }
 
 /* --- NAVIGATION BAR --- */
