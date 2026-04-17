@@ -122,6 +122,10 @@ h2 {
     margin-top: 2rem;
 }
 
+h3 {
+    font-weight: 400; /* This changes the whole heading to a regular/normal weight */
+}
+
 /* Remove the bottom space from the Contact header */
 aside h3 {
     margin-bottom: 5px; 
