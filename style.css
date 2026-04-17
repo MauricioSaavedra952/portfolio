@@ -205,6 +205,8 @@ a:hover {
     color: inherit;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
     
     /* 3D "Raised" Effect */
     box-shadow: 0 4px 0 #d0d7de; 
@@ -270,6 +272,11 @@ a:hover {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.05em; */
+}
+
+.card-tags {
+    margin-top: auto;
+    padding-top: 15px;
 }
 
 /* --- MOBILE RESPONSIVENESS --- */
