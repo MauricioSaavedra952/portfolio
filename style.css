@@ -324,10 +324,34 @@ a:hover {
 
 /* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
+    /* 1. Stack the Sidebar and Main Content */
+    .site-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    /* 2. Adjust Padding for smaller screens */
+    #content-wrapper {
+        padding: 1.5rem;
+    }
+
+    /* 3. Stack the About page "Bottom Row" columns */
+    .bottom-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* 4. Reset Bio Text indentation or width for mobile readability */
+    .bio-text {
+        max-width: 100%; /* Allows text to use the full width of the phone */
+        text-indent: 20px; /* Reduces indent size on small screens if you chose to use it */
+    }
+}
+
+/* @media (max-width: 768px) {
     .site-grid {
         grid-template-columns: 1fr; /* Stacks sidebar on top of main on phones */
     }
     #content-wrapper {
         padding: 1.5rem;
     }
-}
+} */
