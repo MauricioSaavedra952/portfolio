@@ -20,7 +20,7 @@ body {
 } */
 
 #projects, #experience, #about {
-    scroll-margin-top: 100px !important;
+    scroll-margin-top: 80px !important;
 }
 
 /* --- NAVIGATION BAR --- */
