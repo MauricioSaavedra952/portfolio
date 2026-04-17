@@ -279,6 +279,49 @@ a:hover {
     padding-top: 10px;
 }
 
+/* Styling for the About Section Bio */
+.bio-text {
+    max-width: 800px; /* Limits width for better readability */
+    line-height: 1.6;  /* Adds breathing room between lines of text */
+    color: #24292f;   /* A deep professional gray/black */
+    margin-bottom: 40px;
+}
+
+.bio-text p {
+    margin-bottom: 20px; /* Space between the three paragraphs */
+    font-size: 1.05rem;
+}
+
+/* The Bottom Row Container */
+.bottom-row {
+    display: flex;
+    justify-content: flex-start; /* Aligns columns to the left */
+    gap: 60px;                   /* Space between the columns */
+    border-top: 1px solid #d0d7de;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+/* Individual Columns (Education, Honors, etc.) */
+.info-block {
+    flex: 0 1 auto; /* Columns only take as much space as they need */
+}
+
+.info-block h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.85rem;
+    color: #57606a;   /* Subtle gray for the headers */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.info-block p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #24292f;
+}
+
 /* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
     .site-grid {
