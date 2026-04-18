@@ -236,6 +236,7 @@ a:hover {
 
 .pub-title {
     font-size: 1.05rem;
+    font-weight: 600;
     line-height: 1.2;
     color: #1f2328;
     margin-bottom: 4px;
