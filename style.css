@@ -209,7 +209,7 @@ a:hover {
     padding: 15px;
     border-left: 4px solid #0969da;
     margin: 20px 0;
-    border-radius: 0 6px 6px 0; /* Optional: rounds the right corners to match your buttons */
+    border-radius: 0 6px 6px 0;
 } */
 
 .publication-card {
