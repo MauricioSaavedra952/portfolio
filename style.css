@@ -23,6 +23,13 @@ body {
     scroll-margin-top: 80px !important;
 }
 
+#about p {
+    max-width: 700px; /* Limits line length for better reading ergonomics */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
 /* --- NAVIGATION BAR --- */
 nav {
     width: 100%;
