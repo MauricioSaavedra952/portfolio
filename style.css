@@ -86,7 +86,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    border-bottom: 1px solid #d0d7de;
+    /* border-bottom: 1px solid #d0d7de; */
     margin-top: 20px;
 }
 
@@ -208,6 +208,13 @@ a:hover {
     border-left: 4px solid #0969da;
     margin: 20px 0;
     border-radius: 0 6px 6px 0; /* Optional: rounds the right corners to match your buttons */
+}
+
+.pub-highlight {
+    border-left: 3px solid #0969da; /* Uses your blue hover color */
+    padding-left: 10px;
+    margin-top: 10px;
+    font-style: italic;
 }
 
 /* Container for the projects grid */
