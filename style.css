@@ -213,43 +213,46 @@ a:hover {
 } */
 
 .publication-card {
-    background-color: #f6f8fa; /* Light gray to match GitHub/Professional styles */
-    border-left: 4px solid #0969da; /* Your signature blue */
-    padding: 16px 20px;
-    margin: 20px 0 10px 0;
-    border-radius: 0 8px 8px 0;
+    background-color: #f6f8fa;
+    border-left: 4px solid #0969da;
+    padding: 16px;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Forces each of these to be its own line */
+.pub-label, 
+.pub-title, 
+.pub-journal, 
+.status {
+    display: block;
 }
 
 .pub-label {
-    display: block;
     font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
     color: #0969da;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .pub-title {
     font-size: 1.05rem;
-    line-height: 1.4;
-    margin: 0 0 8px 0;
+    line-height: 1.2;
     color: #1f2328;
+    margin-bottom: 4px;
 }
 
-.pub-meta {
-    font-size: 0.9rem;
-    margin: 0;
-    color: #57606a;
+.pub-journal {
+    font-size: 0.95rem;
+    color: #24292f;
+    margin-bottom: 2px;
 }
 
 .status {
-    background-color: #fff8c5; /* Subtle yellow highlight for 'Under Review' */
-    color: #735c0f;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 0.85rem;
+    color: #57606a;
+    font-style: italic;
 }
 
 /* Container for the projects grid */
