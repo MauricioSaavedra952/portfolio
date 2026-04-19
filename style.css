@@ -217,6 +217,8 @@ a:hover {
     padding: 16px;
     margin: 20px 0;
     border-radius: 0 6px 6px 0;
+    max-width: 1000px;
+    align-items: right;
 }
 
 /* Forces each of these to be its own line */
@@ -233,6 +235,7 @@ a:hover {
     color: #0969da;
     font-weight: 700;
     margin-bottom: 4px;
+    align-items: left;
 }
 
 .pub-title {
@@ -241,12 +244,14 @@ a:hover {
     line-height: 1.2;
     color: #1f2328;
     margin-bottom: 4px;
+    align-items: left;
 }
 
 .pub-journal {
     font-size: 0.95rem;
     color: #24292f;
     margin-bottom: 2px;
+    align-items: left;
 }
 
 /* .status {
@@ -265,6 +270,7 @@ a:hover {
     font-weight: 600;
     font-style: normal;          /* Optional: normal font often looks cleaner in a badge than italics */
     margin-top: 6px;             /* Adds a little gap above the yellow box */
+    align-items: left;
 }
 
 /* Container for the projects grid */
