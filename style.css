@@ -249,10 +249,22 @@ a:hover {
     margin-bottom: 2px;
 }
 
-.status {
+/* .status {
     font-size: 0.85rem;
     color: #57606a;
     font-style: italic;
+} */
+
+.status {
+    display: inline-block !important; /* Changed from block so the yellow doesn't stretch across the whole page */
+    font-size: 0.8rem;
+    color: #735c0f;              /* Darker gold text */
+    background-color: #fff8c5;   /* Light yellow background */
+    padding: 2px 8px;            /* Adds space inside the box */
+    border-radius: 4px;          /* Rounds the corners of the box */
+    font-weight: 600;
+    font-style: normal;          /* Optional: normal font often looks cleaner in a badge than italics */
+    margin-top: 6px;             /* Adds a little gap above the yellow box */
 }
 
 /* Container for the projects grid */
