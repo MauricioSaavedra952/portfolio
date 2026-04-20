@@ -32,7 +32,7 @@ body {
 .icon {
     display: inline-block;
     width: 20px;          /* Forces both icons to take up the exact same width */
-    margin-right: 12px;   /* This replaces &nbsp; and is identical for both */
+    margin-right: 10px;   /* This replaces &nbsp; and is identical for both */
     font-size: 16px;      /* Keeps the phone icon at default size */
     text-align: center;
     vertical-align: middle;
