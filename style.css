@@ -42,7 +42,7 @@ body {
 .envelope {
     font-size: 20px;      /* Your preferred size for the envelope */
     position: relative;
-    top: 2px;             /* MANUALLY nudge the envelope down 2px */
+    top: 1px;             /* MANUALLY nudge the envelope down */
 }
 
 #about p {
