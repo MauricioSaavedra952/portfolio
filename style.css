@@ -23,6 +23,28 @@ body {
     scroll-margin-top: 80px !important;
 }
 
+.contact-line a {
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle; /* Aligns text to the middle of the icon */
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;          /* Forces both icons to take up the exact same width */
+    margin-right: 12px;   /* This replaces &nbsp; and is identical for both */
+    font-size: 16px;      /* Keeps the phone icon at default size */
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Specific fix for the envelope icon */
+.envelope {
+    font-size: 20px;      /* Your preferred size for the envelope */
+    position: relative;
+    top: 2px;             /* MANUALLY nudge the envelope down 2px */
+}
+
 #about p {
     max-width: 700px; /* Limits line length for better reading ergonomics */
     margin-left: auto;
