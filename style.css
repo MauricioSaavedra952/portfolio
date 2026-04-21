@@ -25,6 +25,7 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 20px; /* Space between photo and name */
 }
 
 .subtitle {
@@ -456,11 +457,12 @@ a:hover {
     .main-profile-img {
         width: 80px;    /* Smaller photo for mobile */
         height: 80px;
+        margin-bottom: 0;      /* Remove bottom margin so it aligns with name */
     }
 
     .name-titles h1 {
-        font-size: 1.4rem; /* Scale down the name text */
-        margin-bottom: 4px;
+        font-size: 1.5rem; /* Scale down the name text */
+        margin-bottom: 0px;
     }
 
     .subtitle {
