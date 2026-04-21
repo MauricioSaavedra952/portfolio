@@ -445,6 +445,11 @@ a:hover {
     /* 1. Stack the Sidebar and Main Content */
     .site-grid {
         display: block; /* Stacks aside and main */
+        flex-direction: column; /* Stack the sidebar and main content */
+    }
+
+    aside {
+        display: contents; /* This 'unwraps' the aside so we can move the image */
     }
 
     .profile-header {
@@ -455,15 +460,26 @@ a:hover {
     }
 
     .main-profile-img {
-        width: 80px;    /* Smaller photo for mobile */
+        order: -2;
+        width: 80px;
         height: 80px;
-        margin-bottom: 0;      /* Remove bottom margin so it aligns with name */
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 0;
     }
 
-    .name-titles h1 {
-        font-size: 1.5rem; /* Scale down the name text */
-        margin-bottom: 0px;
+    .name-block {
+        order: -1;
+        min-height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
+
+    /* .name-titles h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    } */
 
     .subtitle {
         font-size: 0.9rem;
@@ -484,5 +500,13 @@ a:hover {
     .bio-text {
         max-width: 100%; /* Allows text to use the full width of the phone */
         text-indent: 20px; /* Reduces indent size on small screens if you chose to use it */
+    }
+
+    aside h3, aside p, aside .skills-container, aside .btn {
+        order: 1; 
+    }
+
+    main section {
+        order: 2;
     }
 }
