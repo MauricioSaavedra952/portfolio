@@ -1,0 +1,451 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #24292f;
+    background-color: #f0f2f5; 
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack Nav on top of Content */
+    align-items: center;
+}
+
+/* section[id] {
+    scroll-margin-top: 80px; 
+} */
+
+#projects, #experience, #about {
+    scroll-margin-top: 80px !important;
+}
+
+.contact-line a {
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle; /* Aligns text to the middle of the icon */
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;          /* Forces both icons to take up the exact same width */
+    margin-right: 10px;   /* This replaces &nbsp; and is identical for both */
+    font-size: 16px;      /* Keeps the phone icon at default size */
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Specific fix for the envelope icon */
+.envelope {
+    font-size: 20px;      /* Your preferred size for the envelope */
+    position: relative;
+    top: 1px;             /* MANUALLY nudge the envelope down */
+}
+
+#about p {
+    max-width: 700px; /* Limits line length for better reading ergonomics */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* --- NAVIGATION BAR --- */
+nav {
+    width: 100%;
+    background: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky; /* Stays at top when you scroll */
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.nav-container {
+    width: 95%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #57606a;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #0969da;
+}
+
+/* --- MAIN LAYOUT --- */
+#content-wrapper {
+    background-color: white;
+    width: 95%;
+    max-width: 1100px;
+    min-height: 80vh;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    margin-bottom: 5rem; /* Space at the very bottom */
+}
+
+/* Two-Column Grid */
+.site-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 50px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    /* border-bottom: 1px solid #d0d7de; */
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* Container for the tags */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+/* Individual skill tag */
+.skill-tag {
+    background-color: #f1f8ff; /* Light blue tech vibe */
+    color: #0550ae;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #c8e1ff;
+}
+
+/* --- HEADINGS --- */
+h1, h2, h3 {
+    margin-top: 0;
+    color: #1f2328; /* Slightly darker than body text for contrast */
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    letter-spacing: -0.02em; /* Tighter letters look more modern */
+    margin-bottom: 0; /* Removes the gap below your name */
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #d0d7de; /* Adds a line under sections like 'Experience' */
+    padding-bottom: 8px;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-weight: 400; /* This changes the whole heading to a regular/normal weight */
+}
+
+/* Remove the bottom space from the Contact header */
+aside h3 {
+    margin-bottom: 5px; 
+}
+
+h1 + p {
+    margin-top: 4px; /* Tiny gap between name and occupation */
+    color: #57606a;   /* Optional: makes the occupation look like a subtle sub-header */
+}
+
+/* Remove the top space from paragraphs in the sidebar */
+aside p {
+    margin-top: 0;
+    margin-bottom: 4px; /* Control the spacing between the lines themselves */
+}
+
+/* --- LINKS --- */
+a {
+    color: #0969da; /* The classic GitHub blue */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Shows underline only when you hover over it */
+}
+
+/* Button styles that we can use on any page */
+/* .btn {
+    text-decoration: none; 
+    border: 1px solid #0969da; 
+    padding: 10px 20px; 
+    border-radius: 5px;
+    color: #0969da;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #0969da;
+    color: white;
+} */
+
+.btn {
+    display: inline-block;
+    background-color: #f6f8fa;
+    border: 1px solid #d0d7de;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 6px;
+    color: #24292f;
+    transition: 0.2s; /* Makes the hover effect smooth */
+}
+
+.btn:hover {
+    background-color: #0969da;
+    color: white;
+    border-color: #0969da;
+    text-decoration: none;
+}
+
+/* .header-row h3 {
+    margin-bottom: 5px;
+} */
+
+.date {
+    font-weight: bold;
+    color: #57606a;
+}
+
+/* .publication {
+    background-color: #f6f8fa;
+    padding: 15px;
+    border-left: 4px solid #0969da;
+    margin: 20px 0;
+    border-radius: 0 6px 6px 0;
+} */
+
+.publication-card {
+    background-color: #f6f8fa;
+    border-left: 4px solid #0969da;
+    padding: 16px;
+    margin: 20px 0 20px 25px;
+    border-radius: 0 6px 6px 0;
+    align-items: right;
+}
+
+/* Forces each of these to be its own line */
+.pub-label, 
+.pub-title, 
+.pub-journal, 
+.status {
+    display: block;
+}
+
+.pub-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #0969da;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.pub-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #1f2328;
+    margin-bottom: 4px;
+}
+
+.pub-journal {
+    font-size: 0.95rem;
+    color: #24292f;
+    margin-bottom: 2px;
+}
+
+/* .status {
+    font-size: 0.85rem;
+    color: #57606a;
+    font-style: italic;
+} */
+
+.status {
+    display: inline-block !important; /* Changed from block so the yellow doesn't stretch across the whole page */
+    font-size: 0.8rem;
+    color: #735c0f;              /* Darker gold text */
+    background-color: #fff8c5;   /* Light yellow background */
+    padding: 2px 8px;            /* Adds space inside the box */
+    border-radius: 4px;          /* Rounds the corners of the box */
+    font-weight: 600;
+    font-style: normal;          /* Optional: normal font often looks cleaner in a badge than italics */
+    margin-top: 6px;             /* Adds a little gap above the yellow box */
+}
+
+/* Container for the projects grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* The 3D Card Button */
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none !important;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+    
+    /* 3D "Raised" Effect */
+    box-shadow: 0 4px 0 #d0d7de; 
+    transition: all 0.1s ease;
+    position: relative;
+    top: 0;
+}
+
+/* Hover: Slightly lift */
+.project-card:hover {
+    border-color: #0969da;
+    box-shadow: 0 6px 0 #0969da;
+    top: -2px;
+}
+
+.project-card:hover h3 {
+    text-decoration: underline;
+}
+
+/* Click: "Push" the button down */
+.project-card:active {
+    box-shadow: 0 0px 0 #0969da;
+    top: 4px;
+}
+
+.project-card h3 {
+    margin: 0 0 10px 0;
+    color: #0969da;
+    font-size: 1.2rem;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #57606a;
+    margin-bottom: 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.project-tag {
+    font-size: 0.7rem;
+    background: #f6f8fa;
+    padding: 2px 8px;
+    border-radius: 10px;
+    border: 1px solid #d0d7de;
+    color: #444d56;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    /* font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: #f0f3f6;
+    color: #444d56;
+    border: 1px solid #e1e4e8;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; */
+}
+
+.card-tags {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+/* Styling for the About Section Bio */
+.bio-text {
+    max-width: 800px; /* Limits width for better readability */
+    line-height: 1.6;  /* Adds breathing room between lines of text */
+    color: #24292f;   /* A deep professional gray/black */
+    margin-bottom: 40px;
+}
+
+.bio-text p {
+    margin-bottom: 20px; /* Space between the three paragraphs */
+    font-size: 1.05rem;
+}
+
+/* The Bottom Row Container */
+.bottom-row {
+    display: flex;
+    justify-content: flex-start; /* Aligns columns to the left */
+    gap: 60px;                   /* Space between the columns */
+    border-top: 1px solid #d0d7de;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+/* Individual Columns (Education, Honors, etc.) */
+.info-block {
+    flex: 0 1 auto; /* Columns only take as much space as they need */
+}
+
+.info-block h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.85rem;
+    color: #57606a;   /* Subtle gray for the headers */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.info-block p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #24292f;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media (max-width: 768px) {
+    /* 1. Stack the Sidebar and Main Content */
+    .site-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    /* 2. Adjust Padding for smaller screens */
+    #content-wrapper {
+        padding: 1.5rem;
+    }
+
+    /* 3. Stack the About page "Bottom Row" columns */
+    .bottom-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* 4. Reset Bio Text indentation or width for mobile readability */
+    .bio-text {
+        max-width: 100%; /* Allows text to use the full width of the phone */
+        text-indent: 20px; /* Reduces indent size on small screens if you chose to use it */
+    }
+}
