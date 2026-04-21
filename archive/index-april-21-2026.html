@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mauricio's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+    
+    <nav>
+        <div class="nav-container">
+            <strong>Portfolio</strong>
+            <div class="nav-links">
+                <a href="./" onclick="scrollToTop(event)">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="content-wrapper">
+        <div class="site-grid">
+            <aside>
+                <img src="profile.webp"
+                    alt="Mauricio Saavedra" 
+                    loading="eager" 
+                    fetchpriority="high"
+                    style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 20px;">
+                <h3>Contact</h3>
+                <!-- <p>Phone Number: (+1) 914-258-6480</p> -->
+                <!-- <p>📞&nbsp;&nbsp;<a href="tel:+19142586480" style="font-size: 14px">(+1) 914-258-6480</a></p>
+                <p style="font-size: 20px">✉&nbsp;&nbsp;<a href="mailto:mauriciosaavedra952@gmail.com" style="font-size: 14px">mauriciosaavedra952@gmail.com</a></p> -->
+                <p class="contact-line">
+                    <span class="icon">📞</span>
+                    <a href="tel:+19142586480">(+1) 914-258-6480</a>
+                </p>
+
+                <p class="contact-line">
+                    <span class="icon envelope">✉</span>
+                    <a href="mailto:mauriciosaavedra952@gmail.com">mauriciosaavedra952@gmail.com</a>
+                </p>
+                <a href="resume.pdf"
+                    class="btn"
+                    style="margin-top: 15px; display: block; text-align: center;">
+                    View My CV
+                </a>
+                <br>
+                <h3>Skills</h3>
+                <p>Design and Simulation</p>
+                <div class="skills-container">
+                    <span class="skill-tag">Solidworks</span>
+                    <span class="skill-tag">ANSYS</span>
+                    <span class="skill-tag">Fusion 360</span>
+                </div>
+
+                <p>Programming</p>
+                <div class="skills-container">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">LaTeX</span>
+                    <span class="skill-tag">Arduino IDE</span>
+                </div>
+                
+                <p>Machining & Prototyping</p>
+                <div class="skills-container">
+                    <span class="skill-tag">CNC Machining</span>
+                    <span class="skill-tag">Lathe</span>
+                    <span class="skill-tag">Manual Mill</span>
+                    <span class="skill-tag">3D Printing</span>
+                    <span class="skill-tag">Laser Cutting</span>
+                </div>
+
+                <p>Robotics & Microcontrollers</p>
+                <div class="skills-container">
+                    <span class="skill-tag">Arduino</span>
+                    <span class="skill-tag">Raspberry Pi</span>
+                    <span class="skill-tag">Sensor Integration</span>
+                    <span class="skill-tag">Calibration</span>
+                    <span class="skill-tag">Debugging</span>
+                </div>
+
+                <p>Hardware & Sensors</p>
+                <div class="skills-container">
+                    <span class="skill-tag">EMGs</span>
+                    <span class="skill-tag">Thermocouples</span>
+                    <span class="skill-tag">Motion Capture Systems</span>
+                    <span class="skill-tag">Peltier Coolers</span>
+                    <span class="skill-tag">IMUs</span>
+                </div>
+            </aside>
+
+            <main>
+                <h1>Mauricio Saavedra</h1>
+                <p style="font-size: 1.1rem; color: #57606a;">Mechanical Engineer (M.S.) – Carnegie Mellon University</p>
+                
+                <section id="experience">    
+                    <h2>Experience</h2>
+                    <div style="margin-bottom: 10px;" class="header-row">
+                        <h3 style="margin: 0;"><strong>Carnegie Mellon University</strong> — Research Assistant</h3>
+                        <span class="date">May 2022 - May 2025</span>
+                    </div>
+                    <ul>
+                        <li>Worked within the Neuromechatronics Lab, supervised by a doctoral student.
+                        </li>
+                        <li>Developed custom electromechanical hardware for experiments centered around virtual reality, using fabrication methods, including CAD, 3D printing, metal machining, and woodworking.
+                        </li>
+                        <li>Assisted in conducting the experiments, managing the placement of EMG sensors and motion-capture markers on subjects, calibrating the systems, and subsequently gathering data.
+                        </li>
+                        <li>Performed data processing, filtering, and visualization in Python, converting raw EMG, kinetic, and motion-capture data into analyzed datasets for experimental validation.
+                        </li>
+                        <li>Created technical visualizations and documented test results for inclusion in a doctoral thesis and a manuscript currently pending review at <em>Science Robotics</em>.
+                        </li>
+                    </ul>
+                    <div class="publication-card">
+                        <span class="pub-label">Featured Publication</span>
+                        <span class="pub-title">"Enabling Skilled Human-Computer Interaction After Paralysis via a Wearable sEMG Interface"</span>
+                        <span class="pub-journal"><em>Science Robotics</em>, 2026</span>
+                        <span class="status">Currently under review</span>
+                    </div>
+                </section>
+    
+                <!-- <h2 id="publications">Publications</h2>
+                <div class="publication">
+                    <strong>"Enabling Skilled Human-Computer Interaction After Paralysis via a Wearable sEMG Interface"</strong><br>
+                    <em>Science Robotics</em>, 2026<br>
+                    <p>Currently under review</p>
+                    <a href="#">Link to Publication</a>
+                </div> -->
+    
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="project-grid">
+                
+                        <a href="404.html" class="project-card">
+                            <h3 style="font-weight: 600;">Massage Robot</h3>
+                            <p>Led mechanical design of physiologically-inspired robotic hands using SolidWorks and 3D printing.</p>
+                            <div class="card-tags">
+                                <span class="project-tag">SolidWorks</span>
+                                <span class="project-tag">3D Printing</span>
+                                <span class="project-tag">Calibration</span>
+                            </div>
+                        </a>
+                
+                        <a href="404.html" class="project-card">
+                            <h3 style="font-weight: 600;">Prosthetic Finger</h3>
+                            <p>Bionic finger integrating Myoware EMG sensors and Peltier elements for thermal haptic feedback.</p>
+                            <div class="card-tags">
+                                <span class="project-tag">Haptics</span>
+                                <span class="project-tag">Arduino</span>
+                                <span class="project-tag">Sensor Integration</span>
+                            </div>
+                        </a>
+                
+                        <a href="404.html" class="project-card">
+                            <h3 style="font-weight: 600;">Steering System Lead</h3>
+                            <p>Developed formula-style steering assembly via OptimumKinematics and CNC machining for CMU Racing.</p>
+                            <div class="card-tags">
+                                <span class="project-tag">SolidWorks</span>
+                                <span class="project-tag">Manual Mill</span>
+                                <span class="project-tag">Lathe</span>
+                            </div>
+                        </a>
+                
+                    </div>
+                </section>
+
+                <section id="about">
+                    <h2>About Me</h2>                    
+                    <div class="bio-text">
+                        <p>Recently graduated from my studies in Mechanical Engineering, my interests lie in robotics and design projects. In particular, my work has surrounded haptics, human-computer interaction, and bio-inspired design. Of note, while at Carnegie Mellon, I contributed to a manuscript currently pending review at <em>Science Robotics</em>. My mission is to continue realizing my ideas and inventing products that will advance individual human capacity.
+                        </p>
+                    </div>
+                    <div class="bottom-row" style="display: flex; gap: 40px; margin-top: 2px; border-top: 1px solid #d0d7de; padding-top: 20px;">
+                        <div class="info-block">
+                            <h4 style="color: #57606a; font-size: 0.8rem; text-transform: uppercase;">Education</h4>
+                            <p>MS in Mechanical Engineering | CMU<br>BS in Mechanical Engineering, Robotics Minor | CMU</p>
+                        </div>
+                        <div class="info-block">
+                            <h4 style="color: #57606a; font-size: 0.8rem; text-transform: uppercase;">Honors</h4>
+                            <p>Dean's List (2021-2023)<br>Summer Research Fellow (SURF)</p>
+                        </div>
+                        <div class="info-block">
+                            <h4 style="color: #57606a; font-size: 0.8rem; text-transform: uppercase;">Languages</h4>
+                            <p>English (Native)<br>Spanish (Native)</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+    
+        </div>
+    </div>
+    <script>
+    function scrollToTop(event) {
+        // 1. Prevent the page from reloading or adding # to the URL
+        event.preventDefault();
+    
+        // 2. Smoothly scroll to the absolute top of the window
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+        
+        // 3. (Optional) Manually clear any existing hash from the URL bar
+        window.history.pushState("", document.title, window.location.pathname);
+    }
+    </script>
+</body>
+</html>
