@@ -16,9 +16,7 @@ body {
 }
 
 .profile-header {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    display: block; 
     margin-bottom: 20px;
 }
 
@@ -449,7 +447,9 @@ a:hover {
     }
 
     .profile-header {
-        gap: 20px;      /* Tighter gap for mobile */
+        display: flex;
+        align-items: center;
+        gap: 30px;
         margin-bottom: 20px;
     }
 
