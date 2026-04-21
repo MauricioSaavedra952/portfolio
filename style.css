@@ -444,7 +444,7 @@ a:hover {
 @media (max-width: 768px) {
     /* 1. Stack the Sidebar and Main Content */
     .site-grid {
-        display: block; /* Stacks aside and main */
+        display: flex;
         flex-direction: column; /* Stack the sidebar and main content */
     }
 
