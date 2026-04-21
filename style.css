@@ -15,9 +15,25 @@ body {
     align-items: center;
 }
 
-/* section[id] {
-    scroll-margin-top: 80px; 
-} */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.main-profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #57606a;
+    margin: 0;
+}
 
 #projects, #experience, #about {
     scroll-margin-top: 80px !important;
@@ -429,7 +445,26 @@ a:hover {
 @media (max-width: 768px) {
     /* 1. Stack the Sidebar and Main Content */
     .site-grid {
-        grid-template-columns: 1fr; 
+        display: block; /* Stacks aside and main */
+    }
+
+    .profile-header {
+        gap: 20px;      /* Tighter gap for mobile */
+        margin-bottom: 20px;
+    }
+
+    .main-profile-img {
+        width: 80px;    /* Smaller photo for mobile */
+        height: 80px;
+    }
+
+    .name-titles h1 {
+        font-size: 1.4rem; /* Scale down the name text */
+        margin-bottom: 4px;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
     }
 
     /* 2. Adjust Padding for smaller screens */
