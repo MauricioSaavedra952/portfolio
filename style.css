@@ -37,7 +37,7 @@ body {
 
 .name-block {
     grid-column: 2; /* Forces name into the main content column */
-    align-self: center; /* Keeps it at the very top */
+    align-self: start;
     margin-bottom: 20px;
 }
 
