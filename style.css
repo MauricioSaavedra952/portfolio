@@ -32,13 +32,13 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .name-block {
     grid-column: 2; /* Forces name into the main content column */
     align-self: center; /* Keeps it at the very top */
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 /* .profile-header {
@@ -491,7 +491,7 @@ a:hover {
         text-indent: 20px; /* Reduces indent size on small screens if you chose to use it */
     }
 
-    aside h3 {
+    /* aside h3 {
         padding-top: 20px;
-    }
+    } */
 }
