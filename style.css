@@ -32,13 +32,13 @@ body {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px; /* Space between photo and name */
+    margin-bottom: 2rem;
 }
 
 .name-block {
     grid-column: 2; /* Forces name into the main content column */
-    align-self: start; /* Keeps it at the very top */
-    margin-bottom: 20px;
+    align-self: center; /* Keeps it at the very top */
+    margin-bottom: 2rem;
 }
 
 /* .profile-header {
@@ -175,7 +175,7 @@ h2 {
     font-size: 1.5rem;
     border-bottom: 1px solid #d0d7de; /* Adds a line under sections like 'Experience' */
     padding-bottom: 8px;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 h3 {
