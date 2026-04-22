@@ -38,6 +38,7 @@ body {
 .name-block {
     grid-column: 2; /* Forces name into the main content column */
     align-self: start; /* Keeps it at the very top */
+    margin-bottom: 20px;
 }
 
 /* .profile-header {
