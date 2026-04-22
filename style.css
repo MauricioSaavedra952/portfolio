@@ -175,7 +175,7 @@ h2 {
     font-size: 1.5rem;
     border-bottom: 1px solid #d0d7de; /* Adds a line under sections like 'Experience' */
     padding-bottom: 8px;
-    /* margin-top: 2rem; */
+    margin-top: 2rem;
 }
 
 h3 {
