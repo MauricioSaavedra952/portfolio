@@ -57,14 +57,23 @@ body {
 }
 
 .contact-line {
-    display: flex;         /* This is the secret for perfect alignment */
-    align-items: center;    /* Vertically centers the SVG and the Text */
+    display: flex;
+    align-items: center; /* Ensures the text and icon are perfectly centered vertically */
+    height: 1.5rem;      /* Forces both lines to be the exact same height */
 }
 
-.contact-svg {
-    width: 18px;            /* Set the size to match your font weight */
-    height: 18px;
-    margin-right: 10px;     /* The gap between icon and phone number */
+.phone-svg {
+    width: 18px; 
+    height: auto;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center; /* Centers the SVG horizontally inside the box */
+    align-items: center;     /* Centers the SVG vertically inside the box */
+    width: 20px;             /* This is the "Anchor Width" that keeps text aligned */
+    margin-right: 10px;      /* The fixed gap before the text starts */
+    flex-shrink: 0;          /* Prevents the box from squishing on small screens */
 }
 
 .contact-line a {
