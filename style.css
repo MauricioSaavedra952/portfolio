@@ -148,6 +148,7 @@ nav {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     border-radius: 12px;
     margin-bottom: 5rem; /* Space at the very bottom */
+    box-sizing: border-box; 
 }
 
 .header-row {
