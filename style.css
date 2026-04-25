@@ -62,8 +62,8 @@ body {
 }
 
 .contact-svg {
-    width: 20px;            /* Set the size to match your font weight */
-    height: 20px;
+    width: 16px;            /* Set the size to match your font weight */
+    height: 16px;
     margin-right: 10px;     /* The gap between icon and phone number */
 }
 
