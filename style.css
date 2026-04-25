@@ -56,11 +56,28 @@ body {
     scroll-margin-top: 80px !important;
 }
 
+.contact-line {
+    display: flex;         /* This is the secret for perfect alignment */
+    align-items: center;    /* Vertically centers the SVG and the Text */
+}
+
+.contact-svg {
+    width: 20px;            /* Set the size to match your font weight */
+    height: 20px;
+    margin-right: 10px;     /* The gap between icon and phone number */
+}
+
 .contact-line a {
     font-size: 14px;
     text-decoration: none;
-    vertical-align: middle; /* Aligns text to the middle of the icon */
+    color: inherit;         /* Keeps your link color looking natural */
 }
+
+/* .contact-line a {
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle;
+} */
 
 .icon {
     display: inline-block;
