@@ -73,12 +73,6 @@ body {
     color: inherit;         /* Keeps your link color looking natural */
 }
 
-/* .contact-line a {
-    font-size: 14px;
-    text-decoration: none;
-    vertical-align: middle;
-} */
-
 .icon {
     display: inline-block;
     width: 20px;          /* Forces both icons to take up the exact same width */
