@@ -558,6 +558,10 @@ a:hover {
         padding-top: 0 !important;
     }
 
+    .date {
+        text-align: right;
+    }
+
     .bottom-row {
         display: flex;
         flex-direction: column;
