@@ -573,7 +573,7 @@ a:hover {
     }
 
     .mobile-only {
-        display: none;
+        display: block;
     }
 
     .bottom-row {
