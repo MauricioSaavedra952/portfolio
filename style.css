@@ -487,10 +487,13 @@ a:hover {
         font-size: 1.8rem !important;
     }
 
-    .name-block p {
-        font-size: 1rem !important;
+    .name-block {
         margin-top: 0.625rem !important;
         margin-bottom: 0.625rem !important;
+    }
+    
+    .name-block p {
+        font-size: 1rem !important;
     }
     
     .site-grid {
