@@ -480,15 +480,17 @@ a:hover {
 @media (max-width: 768px) {
     /* 1. Stack the Sidebar and Main Content */
     .site-grid {
-        display: block;
+        display: flex;
+        flex-direction: column; /* Stacks aside and main vertically */
+        gap: 40px;              /* This is your spacing between them */
     }
 
     .main-profile-header {
         display: flex; /* Re-activate the header as a flex-row */
         flex-direction: row;
         align-items: center;
-        gap: 20px;
-        margin-bottom: 20px;
+        width: 100%;
+        margin-bottom: 0; /* Gap handles the spacing now */
     }
 
     .main-profile-img {
@@ -511,6 +513,10 @@ a:hover {
         padding: 0 15px;
         box-sizing: border-box;
     }
+
+    /* .aside {
+        display: contents;
+    } */
 
     /* 3. Stack the About page "Bottom Row" columns */
     .bottom-row {
