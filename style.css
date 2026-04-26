@@ -67,6 +67,11 @@ body {
     height: auto;
 }
 
+.envelope-svg {
+    width: 20px; 
+    height: auto;
+}
+
 .icon-container {
     display: flex;
     justify-content: center; /* Centers the SVG horizontally inside the box */
