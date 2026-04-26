@@ -481,6 +481,10 @@ a:hover {
     color: #24292f;
 }
 
+.mobile-only {
+    display: none;
+}
+
 /* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
 
@@ -566,6 +570,10 @@ a:hover {
 
     .date {
         font-size: 1rem;
+    }
+
+    .mobile-only {
+        display: block;
     }
 
     .bottom-row {
