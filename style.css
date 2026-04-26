@@ -57,7 +57,7 @@ p {
 }
 
 #projects, #experience, #about {
-    scroll-margin-top: 80px !important;
+    scroll-margin-top: 75px !important;
 }
 
 .contact-line {
