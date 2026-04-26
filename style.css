@@ -281,6 +281,7 @@ a:hover {
 .date {
     font-weight: bold;
     color: #57606a;
+    text-align: right;
 }
 
 /* .publication {
@@ -581,6 +582,7 @@ a:hover {
 
     .date {
         font-size: 1rem;
+        text-align: left;
     }
 
     .mobile-only {
