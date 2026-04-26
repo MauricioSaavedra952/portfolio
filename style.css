@@ -558,8 +558,14 @@ a:hover {
         padding-top: 0 !important;
     }
 
+    .header-row {
+        flex-direction: column; /* Stacks the title and date on top of each other */
+        align-items: flex-start; /* Ensures both lines start at the left edge */
+        gap: 0.25rem;               /* Adds a tiny space between the two lines */
+    }
+
     .date {
-        text-align: right;
+        font-size: 1rem;
     }
 
     .bottom-row {
