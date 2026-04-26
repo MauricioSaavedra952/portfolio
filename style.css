@@ -516,7 +516,7 @@ a:hover {
     }
 
     main section {
-        margin-top: 20px !important; /* Increased to 60px so it's very obvious */
+        margin-top: 40px !important; /* Increased to 60px so it's very obvious */
         display: block;
     }
 
