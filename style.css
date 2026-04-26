@@ -489,6 +489,10 @@ a:hover {
     .mobile-only {
         display: block;
     }
+
+    .header-row {
+        align-items: center;
+    }
 }
 
 /* --- MOBILE RESPONSIVENESS --- */
