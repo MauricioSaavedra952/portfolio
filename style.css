@@ -485,6 +485,8 @@ a:hover {
         /* gap: 40px; */
     }
 
+    
+
     .main-profile-header {
         display: flex; /* Re-activate the header as a flex-row */
         flex-direction: row;
