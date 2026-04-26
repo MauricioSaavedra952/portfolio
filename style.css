@@ -499,6 +499,12 @@ a:hover {
     }
 }
 
+@media (max-width: 860px) {
+    .mobile-only {
+        display: block;
+    }
+}
+
 /* --- MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
 
