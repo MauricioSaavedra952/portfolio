@@ -489,7 +489,7 @@ a:hover {
 
 @media (max-width: 1024px) {
     .mobile-only {
-        display: block;
+        display: none;
     }
 
     .header-row {
@@ -604,3 +604,14 @@ a:hover {
         padding-top: 1.25rem; /* 20px / 16 */
     }
 }
+
+@media (max-width: 600px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .header-row {
+        flex-direction: column; /* Stacks the title and date on top of each other */
+        align-items: flex-start; /* Ensures both lines start at the left edge */
+        gap: 0.25rem;               /* Adds a tiny space between the two lines */
+    }
