@@ -515,12 +515,15 @@ a:hover {
         box-sizing: border-box;
     }
 
-    main h2:first-of-type {
-        margin-top: 0 !important;
+    main section {
+        margin-top: 20px !important; /* Increased to 60px so it's very obvious */
+        display: block;
     }
 
-    main h2 {
-        margin-top: 40px !important;
+    /* This ensures the 'Experience' header doesn't jump up due to the desktop style */
+    main h2:first-of-type {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
     
     /* .aside {
