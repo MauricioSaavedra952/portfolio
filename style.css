@@ -482,7 +482,7 @@ a:hover {
     .site-grid {
         display: flex;
         flex-direction: column; /* Stacks aside and main vertically */
-        gap: 40px;              /* This is your spacing between them */
+        /* gap: 40px; */
     }
 
     .main-profile-header {
@@ -515,6 +515,10 @@ a:hover {
         box-sizing: border-box;
     }
 
+    main h2:first-of-type {
+        margin-top: 0 !important;
+    }
+    
     /* .aside {
         display: contents;
     } */
