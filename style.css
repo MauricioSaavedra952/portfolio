@@ -439,7 +439,7 @@ a:hover {
     max-width: 800px; /* Limits width for better readability */
     line-height: 1.6;  /* Adds breathing room between lines of text */
     color: #24292f;   /* A deep professional gray/black */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .bio-text p {
@@ -452,7 +452,6 @@ a:hover {
     display: flex;
     justify-content: flex-start; /* Aligns columns to the left */
     gap: 60px;                   /* Space between the columns */
-    border-top: 1px solid #d0d7de;
     padding-top: 30px;
     margin-top: 40px;
 }
