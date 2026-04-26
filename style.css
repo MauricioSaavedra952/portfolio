@@ -515,6 +515,10 @@ a:hover {
         box-sizing: border-box;
     }
 
+    .skills-container:last-of-type {
+        margin-bottom: 0 !important;
+    }
+
     main section {
         margin-top: 40px !important; /* Increased to 60px so it's very obvious */
         display: block;
