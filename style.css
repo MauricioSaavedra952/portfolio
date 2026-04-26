@@ -162,6 +162,7 @@ nav {
 
 .header-row {
     display: flex;
+    gap: 0.625rem;
     justify-content: space-between;
     align-items: baseline;
     /* border-bottom: 1px solid #d0d7de; */
