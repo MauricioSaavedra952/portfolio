@@ -600,7 +600,8 @@ a:hover {
     .bottom-row {
         display: flex;
         flex-direction: column;
-        gap: 1.875rem;       /* 30px / 16 */
+        gap: 15px;       /* 30px / 16 */
+        padding-top: 8px
     }
 
     .bio-text {
