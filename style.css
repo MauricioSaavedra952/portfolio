@@ -599,8 +599,8 @@ a:hover {
     .bottom-row {
         display: flex;
         flex-direction: column;
-        gap: 15px;       /* 30px / 16 */
-        padding-top: 10px
+        gap: 20px;       /* 30px / 16 */
+        padding-top: 10px;
     }
 
     .bio-text {
@@ -611,10 +611,18 @@ a:hover {
     aside h3 {
         padding-top: 1.25rem; /* 20px / 16 */
     }
+
+    info-block h4 {
+        margin-bottom: 7px;
+    }
 }
 
 @media (max-width: 600px) {
     .mobile-only {
         display: block;
-    }  
+    }
+
+    info-block h4 {
+        margin-bottom: 4px;
+    }
 }
