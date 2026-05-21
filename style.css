@@ -74,6 +74,7 @@ p {
 .envelope-svg {
     width: 18px; 
     height: auto;
+    margin-top: 0.2rem;
 }
 
 .icon-container {
@@ -624,5 +625,9 @@ a:hover {
 
     info-block h4 {
         margin-bottom: 4px;
+    }
+
+    .envelope-svg {
+        margin-top: 0.25rem;
     }
 }
